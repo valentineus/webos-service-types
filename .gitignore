@@ -1,4 +1,5 @@
 ### Linux ###
+
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -14,6 +15,7 @@
 .nfs*
 
 ### macOS ###
+
 # General
 .DS_Store
 .AppleDouble
@@ -42,6 +44,7 @@ Temporary Items
 .apdisk
 
 ### Node ###
+
 # Logs
 logs
 *.log
@@ -119,9 +122,6 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# rollup.js default build output
-dist/
-
 # Uncomment the public line if your project uses Gatsby
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # https://create-react-app.dev/docs/using-the-public-folder/#docsNav
@@ -148,6 +148,7 @@ tmp/
 temp/
 
 ### VisualStudioCode ###
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -155,10 +156,12 @@ temp/
 !.vscode/extensions.json
 
 ### VisualStudioCode Patch ###
+
 # Ignore all local history of files
 .history
 
 ### Windows ###
+
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable
