@@ -1,38 +1,13 @@
-export declare class Service {
-	public constructor(busId: string, activityManager?: IActivityManager, options?: IServiceOptions);
+import { ActivityManager } from "./activity-manager";
+import { Message } from "./message";
+import { Method } from "./method";
+import { Service } from "./service";
+import { Subscription } from "./subscription";
 
-	private _dispatch(): any;
-
-	private _register(): any;
-
-	private _registerBuiltInMethods(): any;
-
-	public call(): any;
-
-	public cancelSubscription(): any;
-
-	public cleanupUnified(): any;
-
-	public idIsPrivileged(): any;
-
-	public info(message: IMessage): void;
-
-	public quit(message: IMessage): void;
-
-	public register(): any;
-
-	public registerPrivate(): any;
-
-	public subscribe(uri: string, args: any): Subscription;
-}
-
-export declare class Subscription { }
-
-export interface IActivityManager { }
-
-export interface IMessage { }
-
-export interface IServiceOptions {
-	readonly idleTimer?: number;
-	readonly noBuiltinMethods?: boolean;
-}
+export {
+	ActivityManager,
+	Message,
+	Method,
+	Service,
+	Subscription,
+};
