@@ -1,6 +1,7 @@
 import { ActivityManager } from "./activity-manager";
 import { Message } from "./message";
 import { Method } from "./method";
+import { Subscription } from "./subscription";
 
 export interface IServiceOptions {
 	readonly idleTimer?: number;
@@ -47,27 +48,29 @@ export declare class Service {
 	// @todo Need to "unified_service"
 	private readonly __serviceMainUnified: any;
 
-	public call(): any;
+	public call(uri: string, args: Record<string, any>, callback: (message: Message) => void): void;
 
-	public cancelSubscription(): any;
+	// @todo Need to "palmbus"
+	public cancelSubscription(handle: any, ls2Message: any): void;
 
-	public cleanupUnified(): any;
+	public cleanupUnified(): void;
 
-	public idIsPrivileged(): any;
+	public idIsPrivileged(id: string): boolean;
 
-	public info(): any;
+	public info(message: Message): void;
 
-	public quit(): any;
+	public quit(message: Message): void;
 
-	public register(): any;
+	public register(name: string, requestCallback?: (message: Message) => void, cancelCallback?: (message: Message) => void, description?: Record<string, any>): Method;
 
-	public registerPrivate(): any;
+	public registerPrivate(name: string, requestCallback?: (message: Message) => void, cancelCallback?: (message: Message) => void, description?: Record<string, any>): Method;
 
-	public subscribe(): any;
+	public subscribe(uri: string, args: Record<string, any>): Subscription;
 
-	private _dispatch(): any;
+	// @todo Need to "palmbus"
+	private _dispatch(handle: any, ls2Message: any): void;
 
-	private _register(): any;
+	private _register(privateBus: boolean, name: string, requestCallback?: (message: Message) => void, cancelCallback?: (message: Message) => void, description?: Record<string, any>): Method;
 
-	private _registerBuiltInMethods(): any;
+	private _registerBuiltInMethods(privateBus: boolean): void;
 }
