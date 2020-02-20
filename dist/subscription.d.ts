@@ -1,7 +1,8 @@
 export declare class Subscription {
-	public constructor(handle: any, uri: string, args: any);
+	// @todo Need to "palmbus"
+	public constructor(handle: any, uri: string, args: Record<string, any>);
 
-	public readonly args: any;
+	public readonly args: Record<string, any>;
 
 	// @todo Need to "palmbus"
 	public readonly handle: any;

@@ -1,10 +1,9 @@
-import { Description } from "./types";
 import { Message } from "./message";
 
 export declare class Method {
-	public constructor(methodName: string, description: Description);
+	public constructor(methodName: string, description: Record<string, any>);
 
-	public readonly description: Description;
+	public readonly description: Record<string, any>;
 
 	public readonly name: string;
 
