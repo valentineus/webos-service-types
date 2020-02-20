@@ -28,6 +28,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
+"@types/node@^13.7.4":
+  version "13.7.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.4.tgz#76c3cb3a12909510f52e5dc04a6298cdf9504ffd"
+  integrity sha512-oVeL12C6gQS/GAExndigSaLxTrKpQPxewx9bOcwfvJiJge4rr7wNaph4J+ns5hrmIV2as5qxqN8YKthn9qh0jw==
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
@@ -76,10 +81,10 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
-"@valentineus/eslint-config@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@valentineus/eslint-config/-/eslint-config-0.0.11.tgz#0265bad54b4accc5682505d55b709c73eb5b5bb8"
-  integrity sha512-V//wOngvvIg5sJu6kzH1i/2DPWIhOeW6aERpuF7CdxL+1nLd5ltAz77lf3bMBWDMnZPyGHBZCAQckywnQgFsbQ==
+"@valentineus/eslint-config@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@valentineus/eslint-config/-/eslint-config-0.0.12.tgz#d66152164715b01dbb15e0e0bbad82ca87977ce7"
+  integrity sha512-cV7m0WdvZjhczz7/qRJ5vaIImcyTQ5tfUUA7e0xZWVj7EJpsD2HiLQhBUN4/eP4yTKWIJfysN1gC9CT09iv44Q==
 
 acorn-jsx@^5.1.0:
   version "5.1.0"
@@ -1218,9 +1223,9 @@ read-pkg@^5.2.0:
     type-fest "^0.6.0"
 
 regexp-tree@^0.1.17, regexp-tree@~0.1.1:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.19.tgz#9326e91d8d1d23298dd33a78cf5e788f57cdc359"
-  integrity sha512-mVeVLF/qg5qFbZSW0f7pXbuVX73dKIjuhOyC2JLKxzmpya75O4qLcvI9j0jp31Iz7IAkEVHa1UErDCAqaLKo5A==
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.20.tgz#d4ca65e4ab9ab05262acfce674dadd02d0fb9808"
+  integrity sha512-gSiH74kc00oTbQkN7tZogZe0ttKwyxyDVLAnU20aWoarbLE9AypbJHRlZ567h4Zi19q3cPVRWDYbfECElrHgsQ==
 
 regexpp@^2.0.1:
   version "2.0.1"

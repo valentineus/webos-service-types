@@ -16,5 +16,10 @@
     "project": "tsconfig.json",
     "sourceType": "module",
     "tsconfigRootDir": "."
+  },
+  "rules": {
+    "unicorn/prevent-abbreviations": [
+      "off"
+    ]
   }
 }

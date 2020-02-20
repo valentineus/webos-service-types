@@ -1,16 +1,17 @@
 {
-  "name": "webos-service-types",
-  "version": "0.0.1",
+  "name": "@valentineus/webos-service-types",
+  "version": "0.1.0",
   "description": "TypeScript's types for WebOS service.",
   "main": "index.js",
   "repository": "git@code.valentineus.link:webos-service-types.git",
   "author": "Valentin Popov <info@valentineus.link>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {},
   "devDependencies": {
+    "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
-    "@valentineus/eslint-config": "^0.0.11",
+    "@valentineus/eslint-config": "^0.0.12",
     "cross-env": "^7.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-eslint-comments": "^3.1.2",
@@ -21,5 +22,8 @@
     "eslint-plugin-vue": "^6.2.1",
     "tslib": "^1.10.0",
     "typescript": "^3.7.5"
+  },
+  "peerDependencies": {
+    "@types/node": "^13.7.4"
   }
 }
