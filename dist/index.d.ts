@@ -1,13 +1,5 @@
-import { ActivityManager } from "./activity-manager";
-import { Message } from "./message";
-import { Method } from "./method";
 import { Service } from "./service";
-import { Subscription } from "./subscription";
 
-export {
-	ActivityManager,
-	Message,
-	Method,
-	Service,
-	Subscription,
-};
+declare module "webos-service" {
+	export = Service;
+}
