@@ -1,6 +1,6 @@
 {
   "name": "@valentineus/webos-service-types",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript's types for WebOS service.",
   "main": "index.js",
   "repository": "git@code.valentineus.link:webos-service-types.git",
