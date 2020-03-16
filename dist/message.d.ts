@@ -2,9 +2,6 @@ import { ActivityManager } from "./activity-manager";
 import { Service } from "./service";
 
 export declare class Message {
-	// @todo Need to "palmbus"
-	public constructor(message: any, handle: any, activityManager: ActivityManager, service: Service);
-
 	public readonly activityManager: ActivityManager;
 
 	public readonly category: string;
@@ -28,6 +25,9 @@ export declare class Message {
 	public readonly token: string;
 
 	public readonly uniqueToken: string;
+
+	// @todo Need to "palmbus"
+	public constructor(message: any, handle: any, activityManager: ActivityManager, service: Service);
 
 	public cancel(response: Record<string, any>): void;
 

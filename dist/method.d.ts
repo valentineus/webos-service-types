@@ -1,11 +1,11 @@
 import { Message } from "./message";
 
 export declare class Method {
-	public constructor(methodName: string, description: Record<string, any>);
-
 	public readonly description: Record<string, any>;
 
 	public readonly name: string;
+
+	public constructor(methodName: string, description: Record<string, any>);
 
 	public on(event: "request", listener: (message: Message) => void): this;
 
