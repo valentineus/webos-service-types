@@ -1,6 +1,6 @@
-import { IActivitySpec } from "./types";
 import { Service } from "./service";
 import { Subscription } from "./subscription";
+import { IActivitySpec } from "./types";
 
 export interface ICreateDummyCallback {
 	activity: { name: string };
@@ -8,23 +8,23 @@ export interface ICreateDummyCallback {
 }
 
 export declare class ActivityManager {
-	public constructor(service: Service, idleTimeout: number);
-
 	public readonly idleTimeout: number;
 
 	public readonly service: Service;
 
+	private readonly _activities: { [id: string]: Subscription };
+
 	public exitOnTimeout: boolean;
 
 	public useDummyActivity: boolean;
-
-	private readonly _activities: { [id: string]: Subscription };
 
 	private _counter: number;
 
 	private _dummyActivityId: number;
 
 	private _idleTimer: NodeJS.Timeout | null;
+
+	public constructor(service: Service, idleTimeout: number);
 
 	public adopt(activity: Record<string, any>, callback?: (payload: Record<string, any>) => void): void;
 

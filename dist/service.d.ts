@@ -9,8 +9,6 @@ export interface IServiceOptions {
 }
 
 export declare class Service {
-	public constructor(busId: string, activityManager?: ActivityManager, options?: IServiceOptions);
-
 	public readonly activityManager: ActivityManager;
 
 	public readonly busId: string;
@@ -26,6 +24,9 @@ export declare class Service {
 	public readonly noBuiltinMethods: boolean;
 
 	public readonly subscriptions: { [id: string]: Message };
+
+	// @todo Need to "unified_service"
+	private readonly __serviceMainUnified: any;
 
 	public cleanupUnifiedDone: boolean;
 
@@ -45,8 +46,7 @@ export declare class Service {
 
 	public useACG: boolean;
 
-	// @todo Need to "unified_service"
-	private readonly __serviceMainUnified: any;
+	public constructor(busId: string, activityManager?: ActivityManager, options?: IServiceOptions);
 
 	public call(uri: string, args: Record<string, any>, callback: (message: Message) => void): void;
 
